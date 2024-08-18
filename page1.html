@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스스로 하기 - Self</title>
+    <!-- Noto Sans Korean 폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+            -webkit-user-select: none;  /* 텍스트 선택 방지 */
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding-left: 300px;
+            padding-right: 25px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        #header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        #site-title h1 {
+            font-size: 25px;
+            margin: 0;
+            text-align: left;
+            font-weight: 1500;
+        }
+
+        #site-title h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav#site-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav#site-nav ul li {
+            position: relative;
+            margin-left: 30px;
+        }
+
+        nav#site-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        nav#site-nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            padding: 10px 0;
+            list-style: none;
+            margin: 0;
+            transform: translateX(-20px);
+        }
+
+        nav#site-nav ul li ul li {
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        nav#site-nav ul li ul li a {
+            color: #333;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        nav#site-nav ul li:hover ul {
+            display: block;
+        }
+
+        nav#site-nav ul li ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        #primary {
+            margin: 70px 0;
+            text-align: left;
+            max-width: 650px;
+        }
+
+        .entry-content img {
+            max-width: 650px;
+            width: 100%;
+            height: auto;
+            -webkit-user-drag: none;  /* 이미지 드래그 방지 */
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
+        }
+
+        footer#colophon {
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        footer#colophon .credit {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer#colophon .copyright {
+            color: #cccccc;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        @media (max-width: 1000px) {
+            #container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #primary {
+                max-width: 100%;
+            }
+        }
+
+        h4 {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        h5 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        h6 {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+    // 텍스트 선택 방지
+    document.onselectstart = function() {
+        return false;
+    };
+
+    // 우클릭 방지
+    document.oncontextmenu = function() {
+        return false;
+    };
+
+    // 이미지 드래그 방지
+    document.ondragstart = function() {
+        return false;
+    };
+    </script>
+</head>
+<body>
+    <div id="container">
+        <header id="masthead" role="banner">
+            <div id="header-content">
+                <div id="site-title">
+                    <h1><a href="index.html">SHIN Seongmin</a></h1>
+                </div>
+                <nav id="site-nav">
+                    <ul>
+                        <li>
+                            <a href="works.html">WORKS</a>
+                            <ul>
+                                <li><a href="video.html">VIDEO</a></li>
+                                <li><a href="photo.html">PHOTO</a></li>
+                                <li><a href="text.html">TEXT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="primary" class="site-content">
+            <!-- 비디오 임베드 코드 -->
+            <br><br><br>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/997279924?h=1b07195a85&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="스스로 구원하기 : 스스로 하기"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
+            <!-- 본문 내용 예시 -->
+            <article>
+                <h4><strong>스스로 구원하기 : 스스로 하기 (Self - Salvation : Self)</strong></h4>
+                <h5>2024, 19′, Experimental, Animation</h5>
+
+                <h5><스스로 구원하기>는 <구원>과 <스스로 하기>로 구성된 작업으로, 기억과 꿈을 통해 구원을 찾으려는 과정과 그 구원으로부터 벗어나려는 과정을 다룬다. 기억은 과거를 되새기는 도구로, 꿈은 현실의 초라함과 불안에서 벗어날 피난처로 기능하며, 시간의 흐름에 따라 구원의 의미가 변화하는 과정을 담아낸다.<br><br>
+                "Self-Salvation" is composed of "Salvation" and "Self" It deals with the process of seeking salvation through memories and dreams, and the process of escaping from that salvation. Memory serves as a tool for revisiting the past, while dreams function as a refuge from the meagerness and anxiety of reality. The work captures the changing meaning of salvation over the flow of time.</h5>
+
+<br>
+                <h5>
+                촬영 - 신성민<br>
+                편집 - 신성민<br>
+                사운드 - 신성민<br>
+                3D 애니메이션 - 신성민<br>
+                음악 - 이승아, 신성민<br><br>
+
+                Filming - Shin Seongmin<br>
+                Editing - Shin Seongmin<br>
+                Sound - Shin Seongmin<br>
+                3D Animation - Shin Seongmin<br>
+                Music - Lee Seung-a, Shin Seongmin<br>
+
+              </h5>
+
+            </article>
+
+            <!-- 본문 내용 아래에 이미지 추가 -->
+            <br><br>
+            <div class="entry-content">
+                <img src="self1.jpg" alt="스스로 구원하기 이미지 1" oncontextmenu="return false;"><br><br>
+                <img src="self2.jpg" alt="스스로 구원하기 이미지 2" oncontextmenu="return false;"><br><br>
+                <img src="self3.jpg" alt="스스로 구원하기 이미지 3" oncontextmenu="return false;"><br><br>
+                <img src="self4.jpg" alt="스스로 구원하기 이미지 4" oncontextmenu="return false;"><br><br>
+                <img src="self6.jpg" alt="스스로 구원하기 이미지 6" oncontextmenu="return false;"><br><br>
+            </div>
+        </div>
+
+        
+        <footer id="colophon" class="site-footer">
+            <div id="site-info">
+                <ul class="credit">
+                    <li class="copyright">&copy; 2024 Shin Seongmin. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

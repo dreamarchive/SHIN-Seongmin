@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꿈 일기 - Dream Journal</title>
+    <!-- Noto Sans Korean 폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+            -webkit-user-select: none;  /* 텍스트 선택 방지 */
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding-left: 300px;
+            padding-right: 25px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        #header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        #site-title h1 {
+            font-size: 25px;
+            margin: 0;
+            text-align: left;
+            font-weight: 1500;
+        }
+
+        #site-title h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav#site-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav#site-nav ul li {
+            position: relative;
+            margin-left: 30px;
+        }
+
+        nav#site-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        nav#site-nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            padding: 10px 0;
+            list-style: none;
+            margin: 0;
+            transform: translateX(-20px);
+        }
+
+        nav#site-nav ul li ul li {
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        nav#site-nav ul li ul li a {
+            color: #333;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        nav#site-nav ul li:hover ul {
+            display: block;
+        }
+
+        nav#site-nav ul li ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        #primary {
+            margin: 70px 0;
+            text-align: left;
+            max-width: 650px;
+        }
+
+        .entry-content img {
+            max-width: 650px;
+            width: 100%;
+            height: auto;
+            -webkit-user-drag: none;  /* 이미지 드래그 방지 */
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
+        }
+
+        footer#colophon {
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        footer#colophon .credit {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer#colophon .copyright {
+            color: #cccccc;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        @media (max-width: 1000px) {
+            #container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #primary {
+                max-width: 100%;
+            }
+        }
+
+        h4 {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        h5 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        h6 {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+    // 텍스트 선택 방지
+    document.onselectstart = function() {
+        return false;
+    };
+
+    // 우클릭 방지
+    document.oncontextmenu = function() {
+        return false;
+    };
+
+    // 이미지 드래그 방지
+    document.ondragstart = function() {
+        return false;
+    };
+    </script>
+</head>
+<body>
+    <div id="container">
+        <header id="masthead" role="banner">
+            <div id="header-content">
+                <div id="site-title">
+                    <h1><a href="index.html">SHIN Seongmin</a></h1>
+                </div>
+                <nav id="site-nav">
+                    <ul>
+                        <li>
+                            <a href="works.html">WORKS</a>
+                            <ul>
+                                <li><a href="video.html">VIDEO</a></li>
+                                <li><a href="photo.html">PHOTO</a></li>
+                                <li><a href="text.html">TEXT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="primary" class="site-content">
+           <!-- 비디오 임베드 코드 -->
+           <br><br><br>
+           <div class="entry-content">
+               <img src="8.jpg" alt="꿈일기" oncontextmenu="return false;"></div>
+
+            <!-- 본문 내용 예시 -->
+            <article>
+                <h4><strong>꿈 일기 (Dream Journal)</strong></h4>
+                <h5>2019, Archival Pigment Print</h5>
+
+                <h5>꿈 일기를 통해 꿈에서 본 장면을 기록하고, 그 경험을 기억으로 작성한다. 꿈 일기는 꿈을 구체적이고 사실적으로 보이게 하는 중요한 도구이다. 일반 일기와 꿈 일기의 차이는 의식적 통제의 유무에 있다. 꿈은 의식적으로 통제할 수 없으며, 내 의지와 상관없이 내 바람이나 체면을 무시하고 나타난다. 예를 들어, 생각지도 못한 인물이 내 꿈에 등장하고, 나는 예상하지 못한 반응을 보인다. 이 모든 것은 '진짜' 생각과 '진짜' 감정이다. 꿈은 꾸며내지 않는다.
+                  <br>반면, 일기에서는 검열이 작동한다. 의식적으로 "이건 써야겠다"라고 생각하거나, 때로는 스스로에게 거짓말을 할 때도 있다. 예를 들어, 내가 힘들다는 사실을 부정하는 경우가 있다. 그래서 꿈은 때로 불편하고, 오히려 더 사실적이다.<br><br>
+                  Dream journals are used to record scenes witnessed in dreams and document those experiences as memories. They are vital tools for making dreams appear concrete and realistic. The difference between a regular diary and a dream journal lies in the presence or absence of conscious control. Dreams occur without conscious control, manifesting regardless of personal desires or social appearance. For instance, unexpected characters may appear in dreams, eliciting unforeseen reactions from me. All these are 'real' thoughts and 'real' emotions. Dreams are not fabricated.
+                  <br>Conversely, censorship operates in a diary. One might consciously decide "I need to write this down," or sometimes even lie to oneself. For example, denying the fact that I am struggling. Thus, dreams can be uncomfortable and, paradoxically, more truthful.</h5>
+
+<br>
+            </article>
+
+            <!-- 본문 내용 아래에 이미지 추가 -->
+            <div class="entry-content">
+                <img src="dreamj1.jpg" alt="dream1" oncontextmenu="return false;"><br><br>
+
+
+            </div>
+
+
+        <footer id="colophon" class="site-footer">
+            <div id="site-info">
+                <ul class="credit">
+                    <li class="copyright">&copy; 2024 Shin Seongmin. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회색지대 - Gray Area</title>
+    <!-- Noto Sans Korean 폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+            -webkit-user-select: none;  /* 텍스트 선택 방지 */
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding-left: 300px;
+            padding-right: 25px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        #header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        #site-title h1 {
+            font-size: 25px;
+            margin: 0;
+            text-align: left;
+            font-weight: 1500;
+        }
+
+        #site-title h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav#site-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav#site-nav ul li {
+            position: relative;
+            margin-left: 30px;
+        }
+
+        nav#site-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        nav#site-nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            padding: 10px 0;
+            list-style: none;
+            margin: 0;
+            transform: translateX(-20px);
+        }
+
+        nav#site-nav ul li ul li {
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        nav#site-nav ul li ul li a {
+            color: #333;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        nav#site-nav ul li:hover ul {
+            display: block;
+        }
+
+        nav#site-nav ul li ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        #primary {
+            margin: 70px 0;
+            text-align: left;
+            max-width: 650px;
+        }
+
+        .entry-content img {
+            max-width: 650px;
+            width: 100%;
+            height: auto;
+            -webkit-user-drag: none;  /* 이미지 드래그 방지 */
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
+        }
+
+        footer#colophon {
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        footer#colophon .credit {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer#colophon .copyright {
+            color: #cccccc;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        @media (max-width: 1000px) {
+            #container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #primary {
+                max-width: 100%;
+            }
+        }
+
+        h4 {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        h5 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        h6 {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+    // 텍스트 선택 방지
+    document.onselectstart = function() {
+        return false;
+    };
+
+    // 우클릭 방지
+    document.oncontextmenu = function() {
+        return false;
+    };
+
+    // 이미지 드래그 방지
+    document.ondragstart = function() {
+        return false;
+    };
+    </script>
+</head>
+<body>
+    <div id="container">
+        <header id="masthead" role="banner">
+            <div id="header-content">
+                <div id="site-title">
+                    <h1><a href="index.html">SHIN Seongmin</a></h1>
+                </div>
+                <nav id="site-nav">
+                    <ul>
+                        <li>
+                            <a href="works.html">WORKS</a>
+                            <ul>
+                                <li><a href="video.html">VIDEO</a></li>
+                                <li><a href="photo.html">PHOTO</a></li>
+                                <li><a href="text.html">TEXT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="primary" class="site-content">
+           <!-- 비디오 임베드 코드 -->
+           <br><br><br>
+           <div style="padding:56.25% 0 0 0;position:relative;">
+             <iframe src="https://player.vimeo.com/video/999877453?h=27336f54fa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Gray Area"></iframe></div>
+             <script src="https://player.vimeo.com/api/player.js"></script>
+
+            <!-- 본문 내용 예시 -->
+            <article>
+                <h4><strong>회색지대 (Gray Area)</strong></h4>
+                <h5>2022, Loop′, Four-channel<br>https://dreamarchive.github.io/dreamreading/</h5>
+
+                <h5><회색지대>는 잃어버린 개를 찾아 경비원에게서 도망치는 꿈을 해석하고, 이를 삶에 적용하려는 시도에서 시작된 작업이다. 꿈을 해석해 삶에 적용하려는 사회 현상을 바라보며, 꿈과 현실이라는 이분법적인 구분이 아닌, 명확하게 정의할 수 없고 특정한 범주에 넣을 수 없는 '해몽'을 영상과 사진, 그리고 글로 수집한다. 이 과정에서 '피규어'라고 불리는 축소 인체 모형을 활용해 꿈에서 등장한 대상을 카메라로 기록하고, 앞서 논의한 꿈의 이야기들과 그 의미들을 해석하여 웹 홈페이지에 기록하며 구축한다.
+                  본인은 이러한 행위를 통해 꿈과 현실의 경계를 흐릿하게 만들고자 한다.<br><br>
+                "Gray Area" is a project that began with an attempt to interpret a dream about escaping from a security guard while searching for a lost dog, and to apply this interpretation to life. Observing the social phenomenon of attempting to apply dream interpretations to life, it collects 'dream interpretations', which cannot be clearly defined or categorized, using video, photography, and text. In this process, miniature human models called 'figures' are used to record subjects from the dream with a camera. The stories and meanings of the dreams discussed earlier are interpreted and documented on a website. Through these actions, the creator aims to blur the boundaries between dreams and reality.</h5>
+
+<br><br>
+
+<div class="entry-content">
+    <img src="gray.jpg" alt="망점" oncontextmenu="return false;"></div>
+<h4><strong>회색지대 : 망점 (Gray Area : Halftone Dot)</strong></h4>
+<h5>2022, Archival Pigment Print, Variable installation</h5>
+                <h5><회색지대 : 망점>은 수집된 해몽을 바탕으로 꿈과 현실이 하나가 되는 순간을 표현하려고 한 작업이다. 이 작업에서는 '망점'이라는 복사 기법을 사용한다. 망점을 활용한 이미지는 흑과 백으로만 구성되어 중간색인 회색이 없다. 가까이서 보면 흑과 백의 패턴들만 보이지만, 거리를 두고 멀리서 보면 이 패턴들이 하나의 이미지로 보이게 된다.
+                  이러한 지점을 꿈과 현실이 일체화되는 순간이라고 생각하며 작업을 진행했다.
+<br><br>"Gray Area: Halftone Dot" is a work that aims to express the moment when dreams and reality become one, based on collected dream interpretations. This piece employs a reproduction technique called 'halftone dot.' Images using halftone dots consist only of black and white, without any intermediate gray. Up close, only the patterns of black and white are visible, but from a distance, these patterns merge into one coherent image. The creator views this point as the moment when dreams and reality merge into one.</h5>
+
+
+            </article>
+
+            <!-- 본문 내용 아래에 이미지 추가 -->
+            <div class="entry-content">
+                <img src="gray2.jpg" alt="망점2" oncontextmenu="return false;"><br><br>
+                <img src="gray3.jpg" alt="망점3" oncontextmenu="return false;"><br><br>
+                <img src="gray4.jpg" alt="망점4" oncontextmenu="return false;"><br><br>
+
+
+            </div>
+
+
+        <footer id="colophon" class="site-footer">
+            <div id="site-info">
+                <ul class="credit">
+                    <li class="copyright">&copy; 2024 Shin Seongmin. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

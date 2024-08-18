@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>낮은 언덕 - Low Hill</title>
+    <!-- Noto Sans Korean 폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+            -webkit-user-select: none;  /* 텍스트 선택 방지 */
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding-left: 300px;
+            padding-right: 25px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        #header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        #site-title h1 {
+            font-size: 25px;
+            margin: 0;
+            text-align: left;
+            font-weight: 1500;
+        }
+
+        #site-title h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav#site-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav#site-nav ul li {
+            position: relative;
+            margin-left: 30px;
+        }
+
+        nav#site-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        nav#site-nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            padding: 10px 0;
+            list-style: none;
+            margin: 0;
+            transform: translateX(-20px);
+        }
+
+        nav#site-nav ul li ul li {
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        nav#site-nav ul li ul li a {
+            color: #333;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        nav#site-nav ul li:hover ul {
+            display: block;
+        }
+
+        nav#site-nav ul li ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        #primary {
+            margin: 70px 0;
+            text-align: left;
+            max-width: 650px;
+        }
+
+        .entry-content img {
+            max-width: 650px;
+            width: 100%;
+            height: auto;
+            -webkit-user-drag: none;  /* 이미지 드래그 방지 */
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            pointer-events: none;
+        }
+
+        footer#colophon {
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        footer#colophon .credit {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer#colophon .copyright {
+            color: #cccccc;
+            font-size: 10px;
+            font-weight: 1000;
+        }
+
+        @media (max-width: 1000px) {
+            #container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #primary {
+                max-width: 100%;
+            }
+        }
+
+        h4 {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        h5 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        h6 {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+    // 텍스트 선택 방지
+    document.onselectstart = function() {
+        return false;
+    };
+
+    // 우클릭 방지
+    document.oncontextmenu = function() {
+        return false;
+    };
+
+    // 이미지 드래그 방지
+    document.ondragstart = function() {
+        return false;
+    };
+    </script>
+</head>
+<body>
+    <div id="container">
+        <header id="masthead" role="banner">
+            <div id="header-content">
+                <div id="site-title">
+                    <h1><a href="index.html">SHIN Seongmin</a></h1>
+                </div>
+                <nav id="site-nav">
+                    <ul>
+                        <li>
+                            <a href="works.html">WORKS</a>
+                            <ul>
+                                <li><a href="video.html">VIDEO</a></li>
+                                <li><a href="photo.html">PHOTO</a></li>
+                                <li><a href="text.html">TEXT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="primary" class="site-content">
+           <!-- 비디오 임베드 코드 -->
+           <br><br><br>
+           <div style="padding:56.25% 0 0 0;position:relative;">
+             <iframe src="https://player.vimeo.com/video/999970036?h=df3c66724b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="낮은 언덕"></iframe></div>
+           <script src="https://player.vimeo.com/api/player.js"></script>
+
+            <!-- 본문 내용 예시 -->
+            <article>
+                <h4><strong>낮은 언덕 (Low Hill)</strong></h4>
+                <h5>2022, 3′, Installation</h5>
+
+                <h5>내게 꿈이란 하나의 시공간에 빠져드는 상태이다. <낮은 언덕>이라는 제목에서 ‘낮은’은 높이와 공간을 측정하는 물리적 단어인 동시에 침잠(깊숙이 가라앉는)하는 행위의 연속성을 의미한다. 언덕 또한 그러한데 '언덕'은 불룩한 공간, 그리고 언덕을 오르는 행위의 연속성, 시간이 깃드는 상태의 접근이다.<br><br>
+              To me, a dream is a state of immersion in a single space-time. The title "Low Hill" employs the word 'low,' a physical term measuring height and space, which simultaneously signifies the continuity of submergence (sinking deeply). The term 'hill' similarly involves a protruding space, and the continuity of ascending it, representing an approach to a state imbued with time.</h5>
+
+<br><br>
+
+<div class="entry-content">
+    <img src="6.jpg" alt="낮은 언덕" oncontextmenu="return false;"></div>
+<h4><strong>낮은 언덕 (Low Hill)</strong></h4>
+<h5>2020 - 2021, Archival Pigment Print<br>
+"Paris," "Corporal Shin Seongmin," "Island"</h5>
+                <h5>미니어처를 실재하는 대상과 동일한 가치를 지닌 존재로 인식했다. 사진의 일관된 상호 모순적인 속성을 통해 그것이 마치 실재하는 대상처럼 보이는 역할을 한다고 생각했다. 미니어처는 실제 대상을 근접하게 모방한 형상이다. 이러한 미니어처는 결코 그 대상 자체가 될 수는 없지만, 개인의 해석이나 사회 구성원들 사이에서 공통된 판단력, 즉 상식이나 관습에 따라, 대상과 모형이 상상의 영역에서 동일한 가치를 지닌다고 생각했다. 나는 이 점이 꿈과 닮아 있다고 느꼈다.
+<br><br>I perceived miniatures as entities with the same value as actual objects. Through the consistent paradoxical properties of photography, I believed they played the role of appearing as real objects. A miniature is a shape closely mimicking a real object. While such miniatures can never become the object itself, they are thought to hold the same value as the real object in the realm of imagination, based on common sense or customs, through individual interpretation or collective judgment among members of society. I felt this aspect was similar to dreams.</h5>
+
+
+            </article>
+
+            <!-- 본문 내용 아래에 이미지 추가 -->
+            <div class="entry-content">
+                <img src="low2.jpg" alt="low2" oncontextmenu="return false;"><br><br>
+
+
+            </div>
+
+
+        <footer id="colophon" class="site-footer">
+            <div id="site-info">
+                <ul class="credit">
+                    <li class="copyright">&copy; 2024 Shin Seongmin. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
