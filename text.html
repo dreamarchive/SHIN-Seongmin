@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIN Seongmin</title>
+    <title>TEXT - SHIN Seongmin</title>
     <!-- Noto Sans Korean 폰트 연결 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <style>
@@ -20,7 +20,7 @@
             max-width: 1500px;
             margin: 0 auto;
             padding-left: 300px;  /* 왼쪽 여백 설정 */
-            padding-right: 30px; /* 오른쪽 여백 설정 */
+            padding-right: 25px; /* 오른쪽 여백 설정 */
             padding-top: 30px;
             padding-bottom: 20px;
         }
@@ -99,10 +99,37 @@
             text-align: left;
         }
 
-        .entry-content img {
-            max-width: 700px; /* 이미지의 최대 너비를 700px로 고정 */
-            width: 100%;
-            height: auto;
+        .work-item {
+            margin-bottom: 10px;
+            overflow: hidden; /* 이미지를 자를 수 있도록 설정 */
+        }
+
+        .work-item img {
+            width: 50%; /* 이미지가 컨테이너에 맞게 확장되도록 설정 */
+            max-height: 300px; /* 원하는 높이 설정 */
+            object-fit: cover; /* 이미지를 컨테이너에 맞게 잘라서 채움 */
+            object-position: center top; /* 이미지의 자를 위치를 상단 중앙으로 설정 */
+            height: auto; /* 높이를 자동 조정 */
+            margin-bottom: 0px; /* 이미지와 텍스트 사이의 간격을 좁힘 */
+        }
+
+        .work-item h5 {
+            margin: 0;
+            padding: 5px 0;
+            font-size: 13px;
+            font-weight: 20;
+            text-decoration: none;
+        }
+
+        .work-item h5 a {
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #000; /* 검정 밑줄 추가 */
+            display: inline-block; /* 밑줄이 텍스트 너비에 맞게 적용되도록 설정 */
+        }
+
+        .work-item h5:hover a {
+            color: #000;
         }
 
         footer#colophon {
@@ -122,11 +149,17 @@
             font-weight: 1000; /* 폰트 두께를 얇게 설정 */
         }
 
-        /* 미디어 쿼리: 화면 너비가 768px 이하일 때 좌우 여백을 제거 */
+        /* 미디어 쿼리: 화면 너비가 1000px 이하일 때 이미지가 여백 없이 채워지도록 설정 */
         @media (max-width: 1000px) {
             #container {
                 padding-left: 20px; /* 최소 여백 설정 */
                 padding-right: 20px; /* 최소 여백 설정 */
+            }
+
+            .work-item img {
+                width: 100%; /* 이미지가 부모 요소의 전체 너비를 차지 */
+                max-height: 300px; /* 이미지 높이 제한 유지 */
+                object-fit: cover; /* 이미지를 자르면서 맞춤 */
             }
         }
     </style>
@@ -153,15 +186,15 @@
                 </nav>
             </div>
         </header>
-
         <div id="primary" class="site-content">
-            <article>
-                <div class="entry-content">
-                    <br><br>
-                </div>
+            <!-- works 페이지의 내용 시작 -->
+            <article class="work-item">
+                <h5><a href="fata.html">파타 모르가나 / Fata Morgana, 2021</a></h5>
             </article>
+
+
+            <!-- 추가 작업 항목 -->
         </div>
-        <br><br><br><br>
         <footer id="colophon" class="site-footer">
             <div id="site-info">
                 <ul class="credit">
