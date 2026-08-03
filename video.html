@@ -116,20 +116,32 @@
         .work-item h5 {
             margin: 0;
             padding: 5px 0;
-            font-size: 13px;
-            font-weight: 20;
-            text-decoration: none;
         }
 
         .work-item h5 a {
             text-decoration: none;
             color: #333;
-            border-bottom: 1px solid #000; /* 검정 밑줄 추가 */
-            display: inline-block; /* 밑줄이 텍스트 너비에 맞게 적용되도록 설정 */
+            display: inline-block;
         }
 
-        .work-item h5:hover a {
-            color: #000;
+        .work-title {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .work-meta {
+            display: block;
+            margin-top: 5px;
+            color: #888;
+            font-size: 11px;
+            font-weight: 300;
+        }
+
+        .work-item h5 a:hover .work-title {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
         }
 
         footer#colophon {
@@ -192,28 +204,28 @@
                 <a href="dark-day-bright-night.html">
                     <img src="ddbn.jpg" alt="Sunless: Dark Day, Bright Night">
                 </a>
-                <h5><a href="dark-day-bright-night.html">어두컴컴한 낮과 밝은 밤 / Sunless: Dark Day, Bright Night</a></h5>
+                <h5><a href="dark-day-bright-night.html"><span class="work-title">어두컴컴한 낮과 밝은 밤</span><span class="work-meta">Sunless: Dark Day, Bright Night</span></a></h5>
             </article>
 
             <article class="work-item">
                 <a href="page2.html">
                     <img src="3.jpg" alt="An Attempt at Exhausting a Place in Paris">
                 </a>
-                <h5><a href="page2.html">파리의 한 장소를 소진시키려는 시도 / An Attempt at Exhausting a Place in Paris</a></h5>
+                <h5><a href="page2.html"><span class="work-title">파리의 한 장소를 소진시키려는 시도</span><span class="work-meta">An Attempt at Exhausting a Place in Paris</span></a></h5>
             </article>
 
             <article class="work-item">
                 <a href="page1.html">
                     <img src="2.jpg" alt="Self - Salvation : Self">
                 </a>
-                <h5><a href="page1.html">스스로 구원하기 / Self - Salvation</a></h5>
+                <h5><a href="page1.html"><span class="work-title">스스로 구원하기</span><span class="work-meta">Self - Salvation</span></a></h5>
             </article>
 
             <article class="work-item">
                 <a href="page3.html">
                     <img src="4.jpg" alt="How to create a map">
                 </a>
-                <h5><a href="page3.html">지도를 만드는 방법 / How to create a map</a></h5>
+                <h5><a href="page3.html"><span class="work-title">지도를 만드는 방법</span><span class="work-meta">How to create a map</span></a></h5>
 
             </article>
 
@@ -221,13 +233,13 @@
                 <a href="page4.html">
                     <img src="5.jpg" alt="Gray area">
                 </a>
-                <h5><a href="page4.html">회색지대 / Gray Area</a></h5>
+                <h5><a href="page4.html"><span class="work-title">회색지대</span><span class="work-meta">Gray Area</span></a></h5>
 <br><br>
                 <article class="work-item">
                     <a href="page5.html">
                         <img src="6.jpg" alt="Low Hill">
                     </a>
-                    <h5><a href="page5.html">낮은 언덕 / Low Hill</a></h5>
+                    <h5><a href="page5.html"><span class="work-title">낮은 언덕</span><span class="work-meta">Low Hill</span></a></h5>
             </article>
 
 
